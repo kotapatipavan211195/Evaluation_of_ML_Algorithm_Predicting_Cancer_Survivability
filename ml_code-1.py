@@ -23,6 +23,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 path_in = os.getenv("DATA_PATH", "./data/")
 path_out = os.getenv("OUTPUT_PATH", "./output/")
 results = os.getenv("RESULT_PATH", "./results/")
+print(path_in, path_out, results)
 
 # Function to load datasets dynamically
 def load_datasets(path: str) -> Dict[str, pd.DataFrame]:
